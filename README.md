@@ -5,28 +5,47 @@ A comprehensive ecosystem of tools designed to enhance the AI-assisted developme
 ## 🤖 Core AI Agent Tools
 
 ### [YOLO](https://github.com/trieloff/yolo)
+
+![YOLO - AI CLI Wrapper with Worktree Isolation](https://raw.githubusercontent.com/trieloff/yolo/main/hero-banner.jpg)
+
 AI CLI tool wrapper with worktree support. Launches AI coding assistants (Claude, Codex, Cursor, Gemini, etc.) with appropriate bypass flags and optional isolated git worktrees for safe experimentation. Supports multi-agent mode with parallel execution and automatic cleanup.
 
 ### [ai-aligned-git](https://github.com/trieloff/ai-aligned-git)
+
+![AI-Aligned-Git](https://github.com/user-attachments/assets/38110bb1-c1d2-4e3d-ae58-2bebb18fe64c)
+
 Git wrapper that enforces safe practices for AI coding agents. Prevents dangerous operations like `git add .`, ensures proper AI attribution, enforces commit hooks, and maintains human sign-off on all AI-generated commits.
 
 ### [ai-aligned-gh](https://github.com/trieloff/ai-aligned-gh)
+
+![AI-Aligned-GH](https://github.com/user-attachments/assets/969463fc-4276-4ed1-8e20-6fee8aafeb3c)
+
 Transparent GitHub CLI wrapper that automatically detects AI tool usage and ensures proper bot attribution. Uses device flow to exchange user tokens for bot tokens, so actions appear as "as-a-bot[bot] on behalf of @user" rather than appearing to come directly from the user.
 
 ### [as-a-bot](https://github.com/trieloff/as-a-bot)
+
 GitHub App token broker running on Cloudflare Workers. Provides user-to-server GitHub tokens via device flow for ai-aligned-gh, ensuring actions show proper user attribution with app badges rather than appearing as bot-only actions.
 
 ## 🛠️ Developer Productivity Tools
 
 ### [gh-workflow-peek](https://github.com/trieloff/gh-workflow-peek)
+
+![GH Workflow Peek](https://github.com/user-attachments/assets/451a28c1-ccb5-4bae-bb16-b94b45f9cebf)
+
 GitHub CLI extension that intelligently filters and highlights errors in GitHub Actions workflow logs by severity. Auto-detects failed PR checks, prioritizes errors (fatal → error → warn → fail), and shows context around matches. Perfect for developers and AI agents working with limited context windows.
 
 ### [upskill](https://github.com/trieloff/upskill)
+
+![Upskill – Install Agent Skills](https://raw.githubusercontent.com/trieloff/upskill/main/hero-banner.jpeg)
+
 Quickly install Claude/Agent skills from other repositories. Works standalone or as a GitHub CLI extension. Copies skills, creates discovery scripts, and updates AGENTS.md with clear markers for idempotent updates.
 
 ## 📊 Transparency & Analytics
 
 ### [vibe-coded-badge-action](https://github.com/trieloff/vibe-coded-badge-action)
+
+![Vibe Coded Badge Action](https://github.com/user-attachments/assets/0350cfe6-7631-4613-aa3e-74e2bd53eda4)
+
 GitHub Action that analyzes repository git history to determine what percentage of commits were made by AI tools. Generates dynamic badges showing AI contribution levels with smart logo selection based on the dominant AI tool (Claude, Cursor, Gemini, Copilot, etc.).
 
 ## 🎯 Use Cases
