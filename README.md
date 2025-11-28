@@ -2,6 +2,12 @@
 
 A comprehensive ecosystem of tools designed to enhance the AI-assisted development experience, improve transparency, and ensure proper attribution in AI-human collaborative coding.
 
+## 🔍 AI Detection
+
+### [am-i-ai](https://github.com/trieloff/am-i-ai)
+
+Shared shell library for detecting AI coding agents. Provides robust two-phase detection (environment variables + process tree) to identify when code is running under AI control. Used by ai-aligned-git and ai-aligned-gh for accurate AI attribution.
+
 ## 🤖 Core AI Agent Tools
 
 ### [YOLO](https://github.com/trieloff/yolo)
@@ -63,6 +69,9 @@ Each tool can be installed independently. Visit the individual repository links 
 Most tools offer one-line installation:
 
 ```bash
+# am-i-ai (detection library)
+curl -fsSL https://raw.githubusercontent.com/trieloff/am-i-ai/main/install.sh | sh
+
 # YOLO
 curl -fsSL https://raw.githubusercontent.com/trieloff/yolo/main/install.sh | sh
 
