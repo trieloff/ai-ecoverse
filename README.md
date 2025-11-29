@@ -2,12 +2,6 @@
 
 A comprehensive ecosystem of tools designed to enhance the AI-assisted development experience, improve transparency, and ensure proper attribution in AI-human collaborative coding.
 
-## 🔍 AI Detection
-
-### [am-i-ai](https://github.com/trieloff/am-i-ai)
-
-Shared shell library for detecting AI coding agents. Provides robust two-phase detection (environment variables + process tree) to identify when code is running under AI control. Used by ai-aligned-git and ai-aligned-gh for accurate AI attribution.
-
 ## 🤖 Core AI Agent Tools
 
 ### [YOLO](https://github.com/trieloff/yolo)
@@ -54,6 +48,14 @@ Quickly install Claude/Agent skills from other repositories. Works standalone or
 
 GitHub Action that analyzes repository git history to determine what percentage of commits were made by AI tools. Generates dynamic badges showing AI contribution levels with smart logo selection based on the dominant AI tool (Claude, Cursor, Gemini, Copilot, etc.).
 
+## 📚 Libraries
+
+### [am-i-ai](https://github.com/trieloff/am-i-ai)
+
+![am-i-ai](https://raw.githubusercontent.com/trieloff/am-i-ai/main/hero.png)
+
+Lightweight shell library for detecting AI coding agents. Provides robust two-phase detection (environment variables + process tree) to identify when code is running under AI control. Powers the AI detection in ai-aligned-git and ai-aligned-gh.
+
 ## 🎯 Use Cases
 
 - **Safe Experimentation**: Use YOLO with worktree mode to test AI-generated changes in isolation
@@ -69,9 +71,6 @@ Each tool can be installed independently. Visit the individual repository links 
 Most tools offer one-line installation:
 
 ```bash
-# am-i-ai (detection library)
-curl -fsSL https://raw.githubusercontent.com/trieloff/am-i-ai/main/install.sh | sh
-
 # YOLO
 curl -fsSL https://raw.githubusercontent.com/trieloff/yolo/main/install.sh | sh
 
@@ -87,6 +86,9 @@ curl -fsSL https://raw.githubusercontent.com/trieloff/upskill/main/install.sh | 
 # gh extensions
 gh extension install trieloff/gh-workflow-peek
 gh extension install trieloff/upskill
+
+# am-i-ai (detection library, used by ai-aligned-git/gh)
+curl -fsSL https://raw.githubusercontent.com/trieloff/am-i-ai/main/install.sh | sh
 ```
 
 ## 🌟 Philosophy
